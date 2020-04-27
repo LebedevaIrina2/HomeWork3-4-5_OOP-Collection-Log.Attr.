@@ -6,4 +6,9 @@
     <RootNamespace>HouseWork_3_OOP</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="NLog" Version="4.7.0" />
+    <PackageReference Include="NLog.Config" Version="4.7.0" />
+  </ItemGroup>
+
 </Project>

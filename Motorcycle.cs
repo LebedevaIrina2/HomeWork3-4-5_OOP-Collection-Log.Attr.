@@ -4,6 +4,7 @@ using System.Text;
 
 namespace HouseWork_3_OOP
 {
+    
     class Motorcycle : Vehicle , Interface1
     {
         public Motorcycle(string name, int year, double price) : base(name, year, price)
