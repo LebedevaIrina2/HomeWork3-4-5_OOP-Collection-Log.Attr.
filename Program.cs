@@ -8,10 +8,13 @@ namespace HouseWork_3_OOP
 {
     class Program
     {
-        static Logger log = LogManager.GetCurrentClassLogger(); //ДОБАВЛЯЕМ АТРИБУТЫ 
+                
+        //ДОБАВЛЯЕМ АТРИБУТЫ 
         [MyAttribute(name = "Main", year = 2020)]
-        static void Main(string[] args)          
 
+        static Logger log = LogManager.GetCurrentClassLogger();
+        static void Main(string[] args)
+      
         {
             //ДЗ №3 ООП---------------------------------------------------------------------
 
@@ -87,9 +90,11 @@ namespace HouseWork_3_OOP
             }
             catch (FormatException x)
             {
-                log.Error ("Error! Неверный формат вводимых данных");
+               
                 Console.WriteLine($"\nНекорректно введенные данные. {x}");
-                Console.ReadKey();               
+                Console.ReadKey();
+
+                log.Error("Error! Неверный формат вводимых данных");
             }
           
             Console.ReadLine();
